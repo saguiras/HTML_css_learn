@@ -16,6 +16,8 @@ input, button, textarea, select { font: inherit }
 	
 /* Mobiles */
 @media (max-width: 767px) { body { padding: 12% 8% } }
+body { background-color: lightcyan }
+h1, h2, h3 {color: blue;}
 h1 {
     text-align: center;
     font-weight: normal;
@@ -36,4 +38,5 @@ p {
     font-family: sans-serif;
     line-height: 1.6;
     margin-bottom: 20px;
+    color: darkslateblue;
 }

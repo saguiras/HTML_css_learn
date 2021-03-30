@@ -16,6 +16,8 @@ input, button, textarea, select { font: inherit }
 	
 /* Mobiles */
 @media (max-width: 767px) { body { padding: 12% 8% } }
+body { background-color: antiquewhite }
+h1, h2, h3 {color: brown;}
 h1 {
     margin-bottom: 56px;
     text-align: center;
