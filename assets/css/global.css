@@ -19,14 +19,14 @@ input, button, textarea, select { font: inherit }
 
 body { 
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Oswald', sans-serif;
     background-color: #2e2e2e;
     color: white;
 }
 
 h1 {
     font-size: 78px;
-    font-weight: normal;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: -2px;
     margin-bottom: 12px;
     line-height: 1.2;
@@ -34,6 +34,7 @@ h1 {
 
 h2 {
     font-size: 42px;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: 6px;
     margin-bottom: 48px;
     line-height: 1.2;
@@ -41,6 +42,7 @@ h2 {
 
 h3 {
     font-size: 24px;
+    font-family: 'Zilla Slab', serif;
     margin-top: 48px;
     margin-bottom: 20px;
     line-height: 1.2;
@@ -49,5 +51,6 @@ h3 {
 
 p {
     font-size: 20px;
+    font-family: 'Zilla Slab', serif;
     margin-bottom: 16px;
 }
