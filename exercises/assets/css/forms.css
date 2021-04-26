@@ -159,10 +159,29 @@ section p {
 .bg-blue-dark h1 { color: #fff }
 .bg-blue-dark p  { color: #fff }
 
-/* =============== UTILTY CLASSES ============== */
-.text-center { text-align: center !important }
+/* =============== BUTTONS AND ICONS ============== */
+.container-btn {
+    margin-top: 32px; margin-bottom: 32px;
+    display: flex;
+}
 
+.container-btn .btn {
+    align-self: flex-start;
+} 
 
+@media (min-width: 767px) {
+    .container-btn a:first-child { margin-right: 40px }
+    /* .container-btn { justify-content: center } */
+}
+
+@media (max-width: 767px) {
+    .container-btn { flex-direction: column }
+    .container-btn a:first-child { margin-bottom: 32px }
+    .container-btn a:last-child { margin-bottom: 0 }
+    /* .container-btn .btn { align-self: center } */
+}
+
+/* All buttons */
 .btn {
     font-family: sans-serif; text-decoration: none;
     padding: 14px 26px; font-size: 18px; font-weight: bold;
@@ -171,7 +190,8 @@ section p {
     word-spacing: 102%; */
 }
 
-.btn-solid:link, .btn-solid:visited {
+/* Solid buttons */
+.btn-solid, .btn-solid:link, .btn-solid:visited {
     background-color: blue; 
     color: #fff;
 } 
@@ -180,8 +200,9 @@ section p {
     background-color: darkblue;
     color: #fff;
 } 
-
-.btn-gradient:link, .btn-gradient:visited {
+ 
+/* Gradient buttons */
+.btn-gradient, .btn-gradient:link, .btn-gradient:visited {
     background-image: linear-gradient(90deg,#e052a0,#f15c41);
     color: #fff;
 } 
@@ -190,27 +211,33 @@ section p {
     background-image: linear-gradient(to right,#3ec7e0,#526bf4);
     color: #fff;
 } 
-
-.btn-ghost:link, .btn-ghost:visited {
+ 
+ /* Ghost buttons */
+.btn-ghost, .btn-ghost:link, .btn-ghost:visited {
     border: solid 2px #000;
     color: #000;
     background-color: transparent; 
     padding: 12px 24px;
 } 
  
-.btn-ghost:focus, .btn-ghost:hover, .btn-ghost:active  {
+ .btn-ghost:focus, .btn-ghost:hover, .btn-ghost:active  {
     border: solid 2px blue;
     color: blue;
     background-color: transparent; 
     padding: 12px 24px;
 } 
 
+/* Button corner styles */
 .btn-soft    { border-radius: 5px }
 .btn-rounded { border-radius: 30px }
 
+/* Buttons with Font Awesome icons */
 .btn i { margin-right: 10px; }
 
+
+/* =============== FORMS ============== */
 .container-form { 
+    display: flex;
     margin-top: 32px; margin-bottom: 32px;
     align-items: stretch;
     padding: 20px; background-color: lightgray;
@@ -235,3 +262,19 @@ section p {
     font-size: 18px;
     font-family: sans-serif;
 }
+
+.container-form #form-status {
+    background-color: #e4f5e8;
+    border: solid 1px green;
+    padding: 10px;
+    line-height: 1.1;
+    font-size: 18px;
+    color: #000;
+    display: none;
+    font-family: sans-serif;
+    margin-top: 12px;
+    max-width: 320px;
+}
+
+/* =============== UTILITY CLASSES ============== */
+.text-center { text-align: center !important }

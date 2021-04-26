@@ -9,12 +9,13 @@
     <meta name="description" content="A sample web page with a form for capturing an user's email address.">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/buttons-icons.css">
+    <link rel="stylesheet" href="assets/css/forms.css">
     
    <!-- Google Fonts -->
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">  
-       
+    <!-- Link to icons for Font Awesome 5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">     
 </head>
 
 <body>
@@ -58,10 +59,11 @@
         <p><b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Ea assumenda qui totam nam corrupti dolorum. Dolores minus doloribus obcaecati cupiditate odit voluptatem recusandae maxime consectetur, delectus labore asperiores enim nobis.</p>
         
         <div class="container-form">
-            <form action="#" method="POST" id="email-form">
-               <label for=""></label>
-               <input type="email" id="email" name="email" placeholder="email address">
-               <button type="submit" class="btn btn-solid btn-rounded"><i class="fas fa-arrow-right"></i> Subscribe</button>   
+            <form action="https://formspree.io/f/xyylzrrg" method="POST" id="email-form">
+                <label for=""></label>
+                <input type="email" id="email" name="email" placeholder="email address" required>
+                <button id="my-form-button" type="submit" class="btn btn-solid btn-rounded"><i class="fas fa-arrow-right"></i> Subscribe</button>   
+                <div id="form-status"></div>  
             </form>
         </div>
 
@@ -72,4 +74,44 @@
 </main>
 
 </body>
+<script>
+    var form = document.getElementById("email-form");
+            
+    async function handleSubmit(event) {
+      event.preventDefault();
+      const status = document.getElementById("form-status");
+      const data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        document.getElementById("form-status").style.display="block";
+        status.innerHTML = "Thanks for your submission!";
+        form.reset();
+        setTimeout(function() {
+            const msg = document.getElementById("form-status");
+            msg.style.transition = '.5s';
+            msg.style.opacity = '0';
+            msg.style.visibility = 'hidden';
+            msg.style.display = 'none';
+        }, 1250);
+    
+      }).catch(error => {
+        document.getElementById("form-status").style.display="block";
+        status.innerHTML = "Oops! There was a problem submitting your form."
+        setTimeout(function() {
+            const msg = document.getElementById("form-status");
+            msg.style.transition = '.5s';
+            msg.style.opacity = '0';
+            msg.style.visibility = 'hidden';
+            msg.style.display = 'none';
+        }, 1250);
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+    
+    </script>
 </html>
