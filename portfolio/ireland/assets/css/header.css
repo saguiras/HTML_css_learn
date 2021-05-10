@@ -69,7 +69,6 @@ body {
 .hero-block h2 {
     font-weight: normal;
     font-size: calc(32px + (54 - 32) * ((100vw - 320px) / (1600 - 320)));
-    
 }
 
 
