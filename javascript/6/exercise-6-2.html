@@ -52,21 +52,18 @@
 
     <script>
         
-    document.getElementById("btn-red").addEventListener("click", setBgRed);
-    document.getElementById("btn-blue").addEventListener("click", setBgBlue);
-    document.getElementById("btn-green").addEventListener("click", setBgGreen);    
+        document.getElementById("btn-red").addEventListener('click', function() {
+	    setBgColor('#ffb3c8')   });
+	
+        document.getElementById("btn-green").addEventListener('click', function() {
+	    setBgColor('#ccffcc')   });
+	
+        document.getElementById("btn-blue").addEventListener('click', function() {
+	    setBgColor('#e6ecff')   });
 
-    function setBgRed() {
-        document.getElementById("js-box").style.backgroundColor = '#ffb3c8';
+    function setBgColor(colorCode) {
+    document.getElementById("js-box").style.backgroundColor = colorCode;
     }
-
-    function setBgBlue() {
-        document.getElementById("js-box").style.backgroundColor = '#e6ecff';
-    }
-
-    function setBgGreen() {
-        document.getElementById("js-box").style.backgroundColor = '#ccffcc';    
-    } 
 
     </script>
 

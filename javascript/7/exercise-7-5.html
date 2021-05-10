@@ -42,7 +42,10 @@
         <script>
             let userNumber;
             userNumber = window.prompt("Please enter a number between 1 and 100.");
-            if (userNumber < 50 ) {
+            if ( (userNumber < 0 ) || (userNumber > 100 ) ) {
+                window.alert("Your entered number is not within the allowed range.");
+            }
+            else if (userNumber < 50 ) {
                 window.alert("Your entered number is less than 50.");
             }
 
