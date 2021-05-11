@@ -1,8 +1,8 @@
 /* Outer footer parent container */
 footer { 
     text-align: center;
-    color:#fff;
-    background-color:#183153;
+    color:#454d66;
+    background-color:#dad873;
 }
 
 /* Desktop footer - inside padding  */
@@ -17,7 +17,7 @@ footer {
 
 /* Styles for footer background, text, icons and links */
 
-footer * { color: #fff }
+footer * { color: #454d66 }
 
 /* Footer headings */
 footer h4 {
@@ -32,7 +32,7 @@ footer h5 {
     font-family: sans-serif;
     font-weight: normal;
     font-style:  italic;
-    color: #34cdf1;
+    color: #309975;
     margin: 0 auto 36px auto;
     font-size: calc(20px + (32 - 20) * ((100vw - 320px)/(1600 - 320)));
 }
@@ -69,7 +69,7 @@ footer ul.footer-links li a {
     border-bottom-width: 2px;
     padding-bottom:2px;    
     font-size: calc(17px + (20 - 17) * ((100vw - 320px)/(1600 - 320)));
-    color: #fff;
+    color: #454d66;
     font-family: sans-serif
 }
 
@@ -80,19 +80,19 @@ footer ul.footer-links li a:visited  {
 
 footer ul.footer-links li a:hover, 
 footer ul.footer-links li a:active  {
-   border-bottom-color: #fff
+   border-bottom-color: #454d66
 }
 
 /* Footer icons */
 footer ul.footer-icons li a i {
     text-decoration: none;
     font-size: calc(22px + (28 - 22) * ((100vw - 320px)/(1600 - 320)));
-    color: #34cdf1;
+    color: #309975;
 }
 
 footer ul.footer-icons li a:hover, 
 footer ul.footer-icons li a:active  {
-   color: #fff
+   color: #454d66
 }
 
 /* Privacy and legal link */
@@ -111,13 +111,13 @@ footer p a:visited  {
 
 footer p a:hover, 
 footer p a:active  {
-   border-bottom-color: #fff
+   border-bottom-color: #454d66
 }
 
 footer a.privacy-legal {
     font-family: sans-serif;    
     display: inline-block;
-    color:#fff;
+    color:#454d66;
     text-decoration: none;
     border-bottom-style: solid;
     border-bottom-width: 2px;

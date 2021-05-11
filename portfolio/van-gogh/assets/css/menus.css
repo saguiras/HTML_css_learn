@@ -338,7 +338,7 @@ a[href^=tel] { text-decoration: none; color: #5ba745 }
 
 /* menu links */
 .menu-dark ul li a:link,  .menu-dark ul li a:visited { color: #fff }
-.menu-dark ul li a:hover, .menu-dark ul li a:active  { color: #b8b8b8 }
+.menu-dark ul li a:hover, .menu-dark ul li a:active  { color: ##a8ffef }
 
 /* cta button */
 .menu-dark ul li a.btn-cta:link,
@@ -402,7 +402,7 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 /* menu links */
 .menu-transparent ul li a:link,  .menu-transparent ul li a:visited { color: #fff }
-.menu-transparent ul li a:hover, .menu-transparent ul li a:active  { color: #b8b8b8 }
+.menu-transparent ul li a:hover, .menu-transparent ul li a:active  { color: ##a8ffef }
 
 /* cta button */
 .menu-transparent ul li a.btn-cta:link,

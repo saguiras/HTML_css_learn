@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero Block: With full-width backgound image</title>
-    <link rel="stylesheet" href="assets/css/hero-img.css">
+    <title>Hero Block with Image</title>
+    <meta name="description" content="A hero block with a background image and a tinted overlay.">
+
+    <link rel="preload" href="assets/img/business.jpg" as="image">
+    
+    <link rel="stylesheet" href="assets/css/hero-image.css">
 
 </head>
 
@@ -17,12 +21,12 @@
     <header class="hero-block text-center">
 
         <div class="hero-text-container">
-            <h1>Albert Camus</h1>
-            <h2>Front-end and Javascript Developer</h2>
+            <h1 class="slide-in-top">Albert Camus</h1>
+            <h2 class="slide-in-left">Creative Web Developer</h2>
         </div>
 
-        <div class="hero-img">
-            <img src="assets/img/bike-tours.jpg" alt="Hook Head">
+        <div class="hero-bg-media">
+            <img src="assets/img/business.jpg" alt="sample background image">   
         </div>
 
         <div class="bg-overlay"></div>
@@ -30,79 +34,7 @@
     </header>
     <!-- /hero block -->
 
-    <!-- hero block -->
-    <header class="hero-block">
-
-        <div class="hero-text-container">
-            <h1>Hello world today</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
-
-        </div>
-
-        <div class="hero-img">
-            <img src="assets/img/business-color.png" alt="Hook Head">
-        </div>
-
-        <div class="bg-overlay-red"></div>
-
-    </header>
-    <!-- /hero block -->
-
-
-
-    <!-- hero block -->
-    <header class="hero-block">
-
-        <div class="hero-text-container">
-            <h1>Hello world today</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
-
-        </div>
-
-        <div class="hero-img">
-            <img src="assets/img/business-color.png" alt="Hook Head">
-        </div>
-
-        <div class="bg-overlay-green"></div>
-
-    </header>
-    <!-- /hero block -->
-
-    <!-- hero block -->
-    <header class="hero-block">
-
-        <div class="hero-text-container">
-            <h1>Hello world today</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
-        </div>
-
-        <div class="hero-img">
-            <img src="assets/img/business-color.png" alt="Hook Head">
-        </div>
-
-        <div class="bg-overlay-blue"></div>
-
-    </header>
-    <!-- /hero block -->
-
-    <!-- hero block -->
-    <header class="hero-block">
-
-        <div class="hero-text-container">
-            <h1>Hello world today</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
-        </div>
-
-        <div class="hero-img">
-            <img src="assets/img/business-bw.png" alt="Hook Head">
-        </div>
-
-        <div class="bg-overlay-purple"></div>
-
-    </header>
-    <!-- /hero block -->
-
-
+ 
 
 </body>
 </html>

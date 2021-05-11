@@ -266,67 +266,67 @@
 
 /* background colour */
 .menu-dark { 
-	background-color: #183153; 
+	background-color: #dad873; 
 	transition: all .5s ease-in-out
 }
 
 /* menu links */
-.menu-dark ul li a:link,  .menu-dark ul li a:visited { color: #fff }
-.menu-dark ul li a:hover, .menu-dark ul li a:active  { color: #b8b8b8 }
+.menu-dark ul li a:link,  .menu-dark ul li a:visited { color: #454d66 }
+.menu-dark ul li a:hover, .menu-dark ul li a:active  { color: #a8ffef }
 
 /* cta button */
 .menu-dark ul li a.btn-cta:link,
 .menu-dark ul li a.btn-cta:visited { 
-    background-color: #34cdf1;
-    color: #fff;
-    border-color:#fff
+    background-color: #309975;
+    color: #454d66;
+    border-color:#454d66
 }
 
 .menu-dark ul li a.btn-cta:hover,
 .menu-dark ul li a.btn-cta:active { 
-    background-color: #fff;
-    color: #34cdf1;
-    border-color:#fff
+    background-color: #454d66;
+    color: #309975;
+    border-color:#454d66
 }
 
 /* on mobiles only - various content */
-.menu-dark.flyout-menu hr { background-color: #fff; border-color:#fff } 
+.menu-dark.flyout-menu hr { background-color: #454d66; border-color:#454d66 } 
 
 .menu-dark.flyout-menu h4,
 .menu-dark.flyout-menu h5,
 .menu-dark.flyout-menu h5 a,
-.menu-dark.flyout-menu p { color:#fff } 
+.menu-dark.flyout-menu p { color:#454d66 } 
 
 /* colour of hamburger icon bars */
 .menu-dark .item-icon .bar1, 
 .menu-dark .item-icon .bar2, 
-.menu-dark .item-icon .bar3 { background-color: #fff }
+.menu-dark .item-icon .bar3 { background-color: #454d66 }
 
 /* phone number link */
-a[href^=tel] { text-decoration: none; color: #fff }
+a[href^=tel] { text-decoration: none; color: #454d66 }
 
 /* email link */
 .menu-dark.flyout-menu h5 a:link, 
 .menu-dark.flyout-menu h5 a:visited {
-    border-bottom-color: #fff;
+    border-bottom-color: #454d66;
 }
 
 .menu-dark.flyout-menu h5 a:hover, 
 .menu-dark.flyout-menu h5 a:active {
-    border-bottom-color: #34cdf1;
+    border-bottom-color: #309975;
 }
 
 /* profile image border colour */
-.menu-dark.flyout-menu div.fly-out-profile-box img { border-color: #34cdf1 }
+.menu-dark.flyout-menu div.fly-out-profile-box img { border-color: #309975 }
 
 /* contact icons */
-.menu-dark.flyout-menu .fly-out-social-icons a i { color:#fff }
+.menu-dark.flyout-menu .fly-out-social-icons a i { color:#454d66 }
 
 .menu-dark ul li .btn-cta:any-link {
-    border-color: #183153 !important;
-    background-image: linear-gradient(to right,#3ec7e0,#526bf4); color: #fff !important;   
+    border-color: #dad873 !important;
+    background-image: linear-gradient(to right,#58b368,#309975); color: #454d66 !important;   
 } 
 
 .menu-dark ul li :is(.btn-cta:focus, .btn-cta:hover, .btn-cta:active)  {
-    background-image: linear-gradient(90deg,#e052a0,#f15c41); color: #fff;
+    background-image: linear-gradient(90deg,#d3fff7,#a8ffef); color: #454d66;
 } 
